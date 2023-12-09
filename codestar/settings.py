@@ -18,7 +18,7 @@ if os.path.isfile('env.py'):
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-TEMPLATES_DIR =  os.path.join(BASE_DIR, 'templates')
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 
 # Quick-start development settings - unsuitable for production
@@ -30,7 +30,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-opoku1968-reddit-news1-v64npapq0q.us2.codeanyapp.com', 'localhost']
+ALLOWED_HOSTS = [
+    '8000-opoku1968-reddit-news2-m-2jwreed6ou.us2.codeanyapp.com', 'localhost']
 
 # Application definition
 
@@ -83,15 +84,15 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#DATABASES = {
- #   'default': {
-  #      'ENGINE': 'django.db.backends.sqlite3',
-  #      'NAME': BASE_DIR / 'db.sqlite3',
-   # }
-#}
+# DATABASES = {
+#   'default': {
+#      'ENGINE': 'django.db.backends.sqlite3',
+#      'NAME': BASE_DIR / 'db.sqlite3',
+# }
+# }
 DATABASES = {
-     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
- }
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -135,7 +136,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
-
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
@@ -146,8 +146,6 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # settings.py
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
-
 # Admin Panel Configuration
 # # Admin Panel originally developed by  https://github.com/otto-torino
 BATON = {
@@ -155,17 +153,17 @@ BATON = {
     'SITE_TITLE': 'Reddit-1 - Community App',
     'INDEX_TITLE': 'Site administration',
     'SUPPORT_HREF': 'https://github.com/otto-torino/django-baton/issues',
-    'COPYRIGHT': 'copyright © 2020 MedicAid Community App', # noqa
-    'POWERED_BY': '<a href="https://github.com/mahmud-sajib">Mahmud Sajib</a>', 
+    'COPYRIGHT': 'copyright © 2020 MedicAid Community App',  # noqa
+    'POWERED_BY': '<a href="https://github.com/mahmud-sajib">Mahmud Sajib</a>',
     'CONFIRM_UNSAVED_CHANGES': True,
     'SHOW_MULTIPART_UPLOADING': True,
     'ENABLE_IMAGES_PREVIEW': True,
     'CHANGELIST_FILTERS_IN_MODAL': True,
     'MENU_ALWAYS_COLLAPSED': False,
     'MENU': (
-        { 'type': 'free', 'label': 'Dashboard', 'icon': 'fa fa-address-book', 'url': 'https://dj-forum.herokuapp.com/admin/', 'perms': ('flatpages.add_flatpage', 'auth.change_user') 
+        {'type': 'free', 'label': 'Dashboard', 'icon': 'fa fa-address-book', 'url': 'https://dj-forum.herokuapp.com/admin/', 'perms': ('flatpages.add_flatpage', 'auth.change_user')
         },
-        { 'type': 'free', 'label': 'Site Home', 'icon': 'fa fa-home', 'url': 'https://dj-forum.herokuapp.com/', 'perms': ('flatpages.add_flatpage', 'auth.change_user') 
+        {'type': 'free', 'label': 'Site Home', 'icon': 'fa fa-home', 'url': 'https://dj-forum.herokuapp.com/', 'perms': ('flatpages.add_flatpage', 'auth.change_user')
         },
         {
             'type': 'app',
@@ -185,5 +183,3 @@ BATON = {
         },
     )
 }
-
-
