@@ -1,39 +1,46 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Reddit News Web App
 
-Welcome,
+![image of Reddit News Blog](Redditnewsblog.png)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+A web application that allows users to view and interact with news content in a Reddit-like format. Built with Python, HTML, CSS, and Django.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+# Contents
 
-## Codeanywhere Reminders
+- [Reddit News Blog](#Reddit-News-Blog)
+- [Contents](#contents)
+- [Introduction](#introduction)
+  - [Project](#project)
+    - [User goals:](#user-goals)
+    - [Game owner goals](#game-owner-goals)
+  - [Development](#development)
+    - [Game Initialization](#game-initialization)
+    - [Game Boards](#game-boards)
+    - [User Input](#user-input)
+    - [Hit and Miss Feedback](#hit-and-miss-feedback)
+    - [Outcome Declaration](#outcome-declaration)
+    - [Error Handling](#error-handling)
+  - [Technologies Used](#technologies-used)
+    - [Resources](#resources)
+- [Testing](#testing)
+  - [Manual Testing](#manual-testing)
+  - [Bugs/Updates after Testing](#bugsupdates-after-testing)
+  - [Validator Testing](#validator-testing)
+- [Deployment](#deployment)
+  - [Credits](#credits)
+  - [Acknowledgements](#acknowledgements)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+# Reddit News Web App
 
-`python3 -m http.server`
+Welcome to the Reddit News Web App, a dynamic and engaging platform for discovering, sharing, and discussing the latest news and topics. This web application is built with Python, HTML, CSS, and Django, providing users with a familiar Reddit-like experience.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+Whether you're a news enthusiast, a curious reader, or someone looking to share your thoughts, this app is designed to cater to your needs. With features like user authentication, post creation, voting systems, and organized subreddits, you can immerse yourself in a vibrant community of news consumers and contributors.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Why Reddit News?
 
-`http_server`
+- **Stay Informed**: Access a wide range of news and topics conveniently categorized into various subreddits.
+- **Engage in Discussions**: Share your opinions, ask questions, and participate in meaningful discussions with other users.
+- **User-Friendly Interface**: Enjoy a seamless and responsive design that adapts to different devices for a comfortable browsing experience.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Ready to dive in? Explore the installation instructions below and start your journey with the Reddit News Web App.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+![Reddit News](Redditnewsblog.png)
